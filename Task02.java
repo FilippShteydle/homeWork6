@@ -16,11 +16,12 @@ public class Task02 {
         int n = scanner.nextInt();
         String str = "";
 
-        for (int i = 1; i < 1000;) {
+        for (int i = 1; i < 1000; i++) {
+            if (str.length() >= 999) break;
             str += i;
-            i = str.length();
         }
         System.out.println(str.charAt(n-1));
+        System.out.println(str.length());
     }
 
 }
